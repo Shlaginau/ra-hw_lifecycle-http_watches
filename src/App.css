@@ -1,55 +1,130 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body, html {
-  height: 100%;
+/* Центрирование содержимого */
+body {
   font-family: Arial, sans-serif;
-}
-
-.converter {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  transition: background-color 0.3s ease;
+  background-color: #f9f9f9;
+  margin: 0;
 }
 
-.input-box, .output-box {
-  width: 300px;
-  height: 50px;
+/* Контейнер для приложения */
+.container {
+  padding: 20px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 600px;
+}
+
+/* Стили для формы ввода */
+.form-container {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 10px 0;
-  font-size: 18px;
-  border: 2px solid #000; 
+  justify-content: space-between;
+  align-items: flex-end; /* Выровнять элементы по нижнему краю */
+  margin-bottom: 20px;
 }
 
-.input-box {
-  background-color: #f0f0f0;
+.input-group {
+  display: flex;
+  flex-direction: column;
+  width: calc(50% - 10px); /* Чтобы обе группы были в одну строку */
 }
 
-.output-box {
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  transition: background-color 0.3s ease;
+.input-group label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #333;
 }
 
-input {
+/* Поля ввода */
+.input-date,
+.input-distance {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+/* Кнопка OK */
+.submit-btn {
+  padding: 10px 20px;
+  border: 2px solid #000;
+  background-color: white;
+  color: black;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  align-self: flex-end; /* Выровнять кнопку по нижнему краю */
+}
+
+.submit-btn:hover {
+  background-color: #f2f2f2;
+}
+
+/* Стили для таблицы */
+.step-table {
   width: 100%;
-  height: 100%;
-  border: none;
-  outline: none;
-  text-align: center;
-  font-size: 18px;
-  background-color: transparent;
+  border-collapse: collapse;
+  border: 2px solid #000;
+  border-radius: 15px;
+  overflow: hidden;
 }
 
-.error {
-  color: red;
-  margin-top: 10px;
+th, td {
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f8f8f8;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+td {
+  font-size: 16px;
+}
+
+/* Стили для кнопок удаления и редактирования */
+td:last-child {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.delete-btn, 
+.edit-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.delete-btn {
+  color: #e74c3c;
+}
+
+.edit-btn {
+  color: #3498db;
+}
+
+.delete-btn:hover, 
+.edit-btn:hover {
+  transform: scale(1.1);
+}
+
+.date-inputs {
+  display: flex;
+  gap: 10px;
+}
+
+.input-date {
+  width: 80px;
+  padding: 10px;
+  font-size: 16px;
+  text-align: center;
 }
