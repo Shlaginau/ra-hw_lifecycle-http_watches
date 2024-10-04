@@ -1,4 +1,3 @@
-/* Центрирование содержимого */
 body {
   font-family: Arial, sans-serif;
   display: flex;
@@ -9,7 +8,6 @@ body {
   margin: 0;
 }
 
-/* Контейнер для приложения */
 .container {
   padding: 20px;
   background-color: white;
@@ -18,18 +16,17 @@ body {
   width: 600px;
 }
 
-/* Стили для формы ввода */
 .form-container {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end; /* Выровнять элементы по нижнему краю */
+  align-items: flex-end;
   margin-bottom: 20px;
 }
 
 .input-group {
   display: flex;
   flex-direction: column;
-  width: calc(50% - 10px); /* Чтобы обе группы были в одну строку */
+  width: calc(50% - 10px);
 }
 
 .input-group label {
@@ -38,7 +35,6 @@ body {
   color: #333;
 }
 
-/* Поля ввода */
 .input-date,
 .input-distance {
   padding: 10px;
@@ -48,7 +44,6 @@ body {
   font-size: 16px;
 }
 
-/* Кнопка OK */
 .submit-btn {
   padding: 10px 20px;
   border: 2px solid #000;
@@ -57,14 +52,13 @@ body {
   font-size: 16px;
   cursor: pointer;
   border-radius: 5px;
-  align-self: flex-end; /* Выровнять кнопку по нижнему краю */
+  align-self: flex-end;
 }
 
 .submit-btn:hover {
   background-color: #f2f2f2;
 }
 
-/* Стили для таблицы */
 .step-table {
   width: 100%;
   border-collapse: collapse;
@@ -89,7 +83,6 @@ td {
   font-size: 16px;
 }
 
-/* Стили для кнопок удаления и редактирования */
 td:last-child {
   display: flex;
   justify-content: center;
