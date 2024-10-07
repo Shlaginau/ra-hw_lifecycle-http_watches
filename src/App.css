@@ -1,8 +1,163 @@
 body {
-  background-color: #f8f9fa;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
 }
 
-h1 {
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
   text-align: center;
-  margin-bottom: 2rem;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+
+.logo {
+  font-size: 32px;
+  font-weight: bold;
+  color: #d32f2f;
+  margin-right: 20px;
+}
+
+.news-and-info {
+  display: flex;
+  flex-direction: column;
+
+  margin-left: 20px;
+}
+
+.news-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  font-size: 14px;
+}
+
+.news-links a {
+  text-decoration: none;
+  color: #1a73e8;
+}
+
+header ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+header li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+header li img {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
+
+header li a {
+  color: #000;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+header li a:hover {
+  text-decoration: underline;
+}
+
+.currency {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-bar input {
+  width: 400px;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ffd700;
+  border-right: none;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.search-bar button {
+  padding: 10px 20px;
+  background-color: #ffd700;
+  border: 2px solid #ffd700;
+  border-radius: 0 4px 4px 0; 
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: -2px;
+  box-sizing: border-box;
+}
+
+.search-bar button:hover {
+  background-color: #ffc107;
+}
+
+.ad-banner {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.ad-banner img {
+  max-width: 100%;
+}
+
+.weather {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.weather h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.weather div {
+  font-size: 24px;
+  color: #4caf50;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.footer-block {
+  flex: 1;
+}
+
+.footer-block a {
+  display: block;
+  text-decoration: none;
+  color: #1a73e8;
+  margin-bottom: 5px;
+}
+
+.footer-block a:hover {
+  text-decoration: underline;
 }

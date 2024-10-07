@@ -1,12 +1,20 @@
-import React from 'react';
-import CardList from './components/CardList';
+import Header from './components/Header';
+import SearchBar from './components/SearchBar';
+import Weather from './components/Weather';
+import AdBanner from './components/AdBanner';
+import Footer from './components/Footer';
+import './App.css';
 
-const App: React.FC = () => {
+function App() {
   return (
-    <div className="container mt-5">
-      <CardList />
+    <div>
+      <Header />
+      <SearchBar />
+      <AdBanner />
+      <Weather />
+      <Footer />
     </div>
   );
-};
+}
 
 export default App;

@@ -1,13 +1,16 @@
-![Build status](https://github.com/Shlaginau/ra-hw_composition_cards/actions/workflows/web.yml/badge.svg)
+![Build status](https://github.com/Shlaginau/ra-hw_composition_decomposition/actions/workflows/web.yml/badge.svg)
 
-# Карточки
+# Декомпозиция
 
-Вам необходимо реализовать компонент карточек, позволяющий использовать себя следующим образом:
+Вы работаете в стартапе, который решил тягаться с самим Яндексом в части предоставления контента. Это, конечно же, шутка, но задача нешуточная.
 
-![](https://github.com/netology-code/ra16-homeworks/raw/ra-51/composition/cards/assets/card1.png)
+Вам принесли дизайн-макет, похожий на этот:
 
-![](https://github.com/netology-code/ra16-homeworks/raw/ra-51/composition/cards/assets/card2.png)
+![](https://github.com/netology-code/ra16-homeworks/raw/ra-51/composition/decomposition/assets/decomposition.png)
 
-В качестве CSS вы можете использовать Bootstrap, а подглядеть генерируемую разметку можете на [странице]( https://getbootstrap.com/docs/4.3/components/card/).
+Что вам нужно сделать:
 
-Подсказка: используйте для этого `props.children` и `props` для отображения картинки.
+1. Разбейте весь интерфейс на компоненты и в файле каждого компонента напишите буквально одну строку комментария, за что данный компонент отвечает. Можете использовать формат JSDoc, детали про него можно посмотреть по [ссылке](https://react-styleguidist.js.org/docs/documenting/). Также рекомендуем [статью](https://medium.com/@antonkrinitsyn/jsdoc-react-5e6c530880a0) на тему JSDoc.
+2. Постарайтесь повторяющиеся компоненты сделать настраемыми за счёт `props`. Допустим, у каждой новости в списке новостей: иконка, текст и ссылка.
+
+Функциональность и стилизацию реализовывать не нужно, достаточно базового оформления, чтобы видно было все блоки.
