@@ -1,10 +1,10 @@
-import StepTracker from './components/StepTracker';
-import './App.css';
+import React from 'react';
+import CardList from './components/CardList';
 
 const App: React.FC = () => {
   return (
-    <div>
-      <StepTracker />
+    <div className="container mt-5">
+      <CardList />
     </div>
   );
 };
